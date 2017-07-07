@@ -46,3 +46,23 @@ The output is also in json format. It contains 3 values. 'Knapsack' is a bit arr
 	"Profit": [int] //Sum of the item profits included in the knapsack
 }
 ```
+## Example
+Input file "in":
+```
+{
+	"Weights": [9, 13, 153, 50, 15, 68, 27, 39, 23, 52, 11, 32, 24, 48, 73, 42, 43, 22, 7, 18, 4, 30],
+	"Profits": [150, 35, 200, 160, 60, 45, 60, 40, 30, 10, 70, 30, 15, 10, 40, 70, 75, 80, 20, 12, 50, 10],
+	"Capacity": 400
+}
+```
+```bash
+$ ./ga_knapsack < in > out
+```
+Output file "out":
+```
+{
+	"Knapsack": [1,1,1,1,1,0,1,0,0,0,1,0,0,0,0,1,1,1,1,0,1,0],
+	"Weight":396,
+	"Profit":1030
+}
+```
